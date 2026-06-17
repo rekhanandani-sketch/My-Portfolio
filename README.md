@@ -10,10 +10,6 @@ This is my personal portfolio website built using HTML5, CSS3 and Javascript.
 5.Projects Section
 6.Contact Section
 7.Technologies Used
-HTML5
-CSS3
-Javascript
-
 
 Author
 Rekha Nandani
