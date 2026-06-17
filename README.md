@@ -1,15 +1,15 @@
 My Portfolio Website
 
-This is my personal portfolio website built using HTML5 and CSS3.
+This is my personal portfolio website built using HTML5, CSS3 and Javascript.
 
-Features
-Responsive Design
-About Me Section
-Skills Section
-Technologies Section
-Projects Section
-Contact Section
-Technologies Used
+##Features
+1.Responsive Design
+2.About Me Section
+3.Skills Section
+4.Technologies Section
+5.Projects Section
+6.Contact Section
+7.Technologies Used
 HTML5
 CSS3
 Javascript
