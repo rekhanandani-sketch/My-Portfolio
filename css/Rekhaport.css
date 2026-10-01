@@ -109,6 +109,8 @@ letter-spacing: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* clip the empty corners of the rotating SVG square so they don't cause horizontal scroll */
+    overflow: hidden;
 }
 
 .profile-container img {
@@ -441,5 +443,267 @@ gap:40px;
     .title-white,
     .title-gold{
         font-size:3.5rem;
+    }
+}
+
+/* ---------- Responsive fixes (tablet & mobile) ---------- */
+
+@media(max-width:1100px){
+    .first{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:1.5rem;
+    }
+
+    .first p{
+        margin-left:0;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:900px){
+    section{
+        padding:50px 40px;
+    }
+
+    .hero{
+        padding:5rem 40px;
+    }
+
+    .contact{
+        padding:10px 40px;
+    }
+
+    .big{
+        font-size:40px;
+    }
+
+    .big br{
+        display:none;
+    }
+
+    footer{
+        flex-wrap:wrap;
+        gap:12px 24px;
+    }
+}
+
+@media(max-width:800px){
+    h2{
+        font-size:clamp(56px,22vw,160px);
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .first{
+        align-self:stretch;
+    }
+
+    .first p br{
+        display:none;
+    }
+}
+
+@media(max-width:600px){
+    nav{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+        padding:12px 16px;
+    }
+
+    .links{
+        gap:16px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .links a{
+        font-size:11px;
+    }
+
+    .hero{
+        padding:7rem 20px 3rem;
+    }
+
+    .meta{
+        flex-wrap:wrap;
+        gap:6px 16px;
+    }
+
+    .meta span{
+        font-size:10px;
+        letter-spacing:1px;
+    }
+
+    h1{
+        font-size:clamp(64px,22vw,100px);
+        letter-spacing:-3px;
+    }
+
+    .first p{
+        font-size:1rem;
+    }
+
+    .profile-container,
+    .circle-text{
+        width:260px;
+        height:260px;
+    }
+
+    .profile-container img{
+        width:130px;
+        height:130px;
+    }
+
+    .skills-slider{
+        padding:14px 0;
+    }
+
+    .skills-track{
+        gap:24px;
+    }
+
+    .skills-track span{
+        font-size:14px;
+        letter-spacing:2px;
+    }
+
+    section{
+        padding:40px 20px;
+    }
+
+    .number{
+        margin-bottom:28px;
+        font-size:14px;
+    }
+
+    .big{
+        font-size:30px;
+    }
+
+    .cards{
+        gap:20px;
+    }
+
+    .card{
+        padding:24px;
+    }
+
+    .card h3{
+        font-size:24px;
+    }
+
+    .toolbox-section{
+        min-height:auto;
+    }
+
+    .toolbox-wrapper{
+        gap:48px;
+        padding-top:1rem;
+    }
+
+    .toolbox-box h2{
+        font-size:30px;
+        margin-bottom:24px;
+    }
+
+    .tag-container{
+        gap:10px;
+    }
+
+    .tag{
+        padding:10px 18px;
+        font-size:14px;
+    }
+
+    .contact{
+        padding:10px 20px;
+    }
+
+    .contact h1{
+        letter-spacing:-2px;
+    }
+
+    .contact-container{
+        gap:40px;
+        padding-top:20px;
+    }
+
+    .title-white{
+        font-size:2.6rem;
+    }
+
+    .title-gold{
+        font-size:2.3rem;
+    }
+
+    .contact-info{
+        margin-top:32px;
+    }
+
+    .contact-info p{
+        font-size:1rem;
+        overflow-wrap:anywhere;
+    }
+
+    .social-links{
+        flex-wrap:wrap;
+        gap:12px 20px;
+    }
+
+    .input-box{
+        margin-bottom:28px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+        font-size:16px;
+    }
+
+    .contact-right button{
+        margin-bottom:3rem;
+    }
+
+    footer{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:8px;
+        font-size:13px;
+    }
+}
+
+@media(max-width:360px){
+    .links{
+        gap:12px;
+    }
+
+    .profile-container,
+    .circle-text{
+        width:230px;
+        height:230px;
+    }
+
+    .profile-container img{
+        width:115px;
+        height:115px;
+    }
+
+    .big{
+        font-size:26px;
+    }
+
+    .title-white{
+        font-size:2.3rem;
+    }
+
+    .title-gold{
+        font-size:2rem;
     }
 }
